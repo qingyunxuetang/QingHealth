@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import com.qingyunxuetang.qinghealth.R;
 import com.qingyunxuetang.qinghealth.model.NewsDetailModel;
-import com.qingyunxuetang.qinghealth.service.NewsDetailBiz;
+import com.qingyunxuetang.qinghealth.service.NewsDetailService;
 
 public class NewsDetailActivity extends Activity {
 
@@ -34,8 +34,8 @@ public class NewsDetailActivity extends Activity {
     }
 
     private NewsDetailModel loadNewsDetail() {
-        NewsDetailBiz newsDetailBiz = new NewsDetailBiz();
-        NewsDetailModel newsDetailModel = newsDetailBiz.loadNewsDetail(this.getApplicationContext());
+        NewsDetailService newsDetailService = new NewsDetailService();
+        NewsDetailModel newsDetailModel = newsDetailService.loadNewsDetail(this.getApplicationContext());
         return newsDetailModel;
     }
 

@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.qingyunxuetang.qinghealth.R;
 import com.qingyunxuetang.qinghealth.model.NewsListModel;
-import com.qingyunxuetang.qinghealth.service.NewsListBiz;
+import com.qingyunxuetang.qinghealth.service.NewsListService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,7 @@ import java.util.List;
 public class NewsListActivity3 extends Activity {
 
     private ListView lvNews;
-    private NewsListBiz newsListBiz;
+    private NewsListService newsListService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class NewsListActivity3 extends Activity {
         initView();
         List<NewsListModel> newsListModels = loadNewsListModels();
         setView(newsListModels);
-        newsListBiz = new NewsListBiz();
+        newsListService = new NewsListService();
     }
 
     private void initView(){
@@ -39,7 +39,7 @@ public class NewsListActivity3 extends Activity {
     }
 
     private List<NewsListModel> loadNewsListModels(){
-        List<NewsListModel> newsListModels = newsListBiz.loadNewsList(this.getApplicationContext());
+        List<NewsListModel> newsListModels = newsListService.loadNewsList(this.getApplicationContext());
         return newsListModels;
     }
 

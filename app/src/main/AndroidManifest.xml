@@ -19,5 +19,6 @@
         <activity android:name=".ui.news.NewsListActivity3"/>
         <activity android:name=".ui.news.NewsDetailActivity"/>
         <activity android:name=".ui.demo.JSONDemoActivity"/>
+        <activity android:name=".ui.main.MainActivity"/>
     </application>
 </manifest>

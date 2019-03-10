@@ -8,7 +8,7 @@ import com.qingyunxuetang.qinghealth.common.util.AssetUtil;
 import com.qingyunxuetang.qinghealth.model.NewsDetailModel;
 
 
-public class NewsDetailBiz {
+public class NewsDetailService {
     public NewsDetailModel loadNewsDetail(Context context) {
 
         NewsDetailModel newsDetailModel;

@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * 新闻列表业务逻辑层
  */
-public class NewsListBiz {
+public class NewsListService {
 
     public List<NewsListModel> loadNewsList(Context context){
         List<NewsListModel> newsListModels = new ArrayList<>();
