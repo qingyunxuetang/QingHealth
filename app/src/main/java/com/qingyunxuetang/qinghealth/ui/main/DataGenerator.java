@@ -1,11 +1,6 @@
 package com.qingyunxuetang.qinghealth.ui.main;
 
-import android.content.Context;
 import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.qingyunxuetang.qinghealth.R;
 
@@ -17,9 +12,9 @@ public class DataGenerator {
     public static Fragment[] getFragments(String from){
         Fragment fragments[] = new Fragment[4];
         fragments[0] = HomeFragment.newInstance(from);
-//        fragments[1] = DiscoveryFragment.newInstance(from);
-//        fragments[2] = AttentionFragment.newInstance(from);
-//        fragments[3] = ProfileFragment.newInstance(from);
+        fragments[1] = DiscoveryFragment.newInstance(from);
+        fragments[2] = NewsFragment.newInstance(from);
+        fragments[3] = ProfileFragment.newInstance(from);
         return fragments;
     }
 

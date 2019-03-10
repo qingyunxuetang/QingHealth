@@ -10,21 +10,16 @@ import android.view.ViewGroup;
 
 import com.qingyunxuetang.qinghealth.R;
 
-/**
- * Created by zhouwei on 17/3/20.
- */
-
-public class HomeFragment extends Fragment {
-
+public class ProfileFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_home, null);
+        View rootView = inflater.inflate(R.layout.fragment_profile, null);
         return rootView;
     }
 
-    public static HomeFragment newInstance(String from){
-        HomeFragment homeFragment = new HomeFragment();
-        return homeFragment;
+    public static ProfileFragment newInstance(String from){
+        ProfileFragment fragment = new ProfileFragment();
+        return fragment;
     }
 }

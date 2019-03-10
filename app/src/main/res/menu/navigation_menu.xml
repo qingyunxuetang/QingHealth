@@ -13,7 +13,7 @@
     <item
         android:id="@+id/tab_menu_attention"
         android:icon="@drawable/ic_insert_photo_black_24dp"
-        android:title="关注"
+        android:title="新闻"
         />
     <item
         android:id="@+id/tab_menu_profile"

@@ -7,8 +7,7 @@ import android.os.Handler;
 import android.os.Message;
 
 import com.qingyunxuetang.qinghealth.R;
-import com.qingyunxuetang.qinghealth.ui.demo.JSONDemoActivity;
-import com.qingyunxuetang.qinghealth.ui.news.NewsDetailActivity;
+import com.qingyunxuetang.qinghealth.ui.main.MainActivity;
 
 import java.lang.ref.WeakReference;
 
@@ -34,7 +33,8 @@ public class WelcomeActivity extends Activity {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-            Intent intent = new Intent(wrfActivity.get(), NewsDetailActivity.class);
+            wrfActivity.get().finish();
+            Intent intent = new Intent(wrfActivity.get(), MainActivity.class);
             wrfActivity.get().startActivity(intent);
         }
     }
