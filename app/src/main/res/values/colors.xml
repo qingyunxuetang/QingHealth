@@ -3,4 +3,8 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="actionbar_start_bg">#ff6567</color>
+    <color name="actionbar_end_bg">#fa5247</color>
+    <color name="grey_e0">#e0e0e0</color>
+    <color name="black_33">#333333</color>
 </resources>
